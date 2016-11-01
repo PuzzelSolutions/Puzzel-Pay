@@ -4,7 +4,7 @@ InstaPay
 Official documentation
 ----------------------
 
-Welcome to the developer pages for the Intelecom InstaPay. Here you will find everything you need to integrate InstaPay with your existing applications / systems.
+Welcome to the Intelecom InstaPay API developer pages. Here you will find everything you need to integrate InstaPay with your existing applications / systems.
 
 ### Where to start?
 
