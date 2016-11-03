@@ -19,6 +19,7 @@
 			- [Batch Action](#batch-action)
 			- [Direct Payment Settings](#direct-payment-settings)
 			- [Receipt Template](#receipt-template)
+				- [Predefined variables](#predefined-variables)
 			- [Request Type](#request-type)
 			- [Response example, ok](#response-example-ok)
 			- [Response example, validation errors](#response-example-validation-errors)
@@ -205,6 +206,15 @@ Done by the API client application when the API returns `401 Unauthorized`.
 |----------|--------------------------------------|------------------------------------------------|:---------:|
 | type     | one of [Request Type](#request-type) | Request type                                   | Y         |
 | text     | string                               | Template text, including variable placeholders | Y         |
+
+###### Predefined variables
+
+The following predefined variables may be used in receipt templates.
+
+| Variable name    | Description                                          |
+|------------------|------------------------------------------------------|
+| paymentLink      | Payment/receipt link, e.g. https://short.url/example |
+| paymentReference | Payment reference, e.g. abc123                       |
 
 ##### Request Type
 
