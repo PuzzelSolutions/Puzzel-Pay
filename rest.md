@@ -4,41 +4,41 @@
 
 - [Swagger UI](#swagger-ui)
 - [Authentication](#authentication)
-	- [Refresh token](#refresh-token)
-		- [Obtaining a new JWT](#obtaining-a-new-jwt)
-			- [Request example](#request-example)
-			- [Response example](#response-example)
+    - [Refresh token](#refresh-token)
+        - [Obtaining a new JWT](#obtaining-a-new-jwt)
+            - [Request example](#request-example)
+            - [Response example](#response-example)
 - [Resources](#resources)
-	- [Batches](#batches)
-		- [Create batch](#create-batch)
-			- [Request example](#request-example)
-			- [Batch Request](#batch-request)
-			- [Recipient](#recipient)
-			- [Payment](#payment)
-			- [Message Template](#message-template)
-			- [Batch Action](#batch-action)
-			- [Direct Payment Settings](#direct-payment-settings)
-			- [Receipt Template](#receipt-template)
-				- [Predefined variables](#predefined-variables)
-			- [Request Type](#request-type)
-			- [Response example, ok](#response-example-ok)
-			- [Response example, validation errors](#response-example-validation-errors)
-			- [Response codes](#response-codes)
-			- [Batch Response](#batch-response)
-			- [Recipient Status](#recipient-status)
-			- [Payment Link](#payment-link)
-			- [Validation Error](#validation-error)
-		- [Get batch status](#get-batch-status)
-			- [Request example](#request-example)
-			- [Response example](#response-example)
-			- [Response codes](#response-codes)
-			- [Batch Status](#batch-status)
-			- [Sms Status](#sms-status)
-			- [Payment Provider Status](#payment-provider-status)
-			- [Payment Provider Payment Status](#payment-provider-payment-status)
-			- [Payment Provider](#payment-provider)
-			- [Recipient Status](#recipient-status)
-			- [Step](#step)
+    - [Batches](#batches)
+        - [Create batch](#create-batch)
+            - [Request example](#request-example)
+            - [Batch Request](#batch-request)
+            - [Recipient](#recipient)
+            - [Payment](#payment)
+            - [Message Template](#message-template)
+            - [Batch Action](#batch-action)
+            - [Direct Payment Settings](#direct-payment-settings)
+            - [Receipt Template](#receipt-template)
+                - [Predefined variables](#predefined-variables)
+            - [Request Type](#request-type)
+            - [Response example, ok](#response-example-ok)
+            - [Response example, validation errors](#response-example-validation-errors)
+            - [Response codes](#response-codes)
+            - [Batch Response](#batch-response)
+            - [Recipient Status](#recipient-status)
+            - [Payment Link](#payment-link)
+            - [Validation Error](#validation-error)
+        - [Get batch status](#get-batch-status)
+            - [Request example](#request-example)
+            - [Response example](#response-example)
+            - [Response codes](#response-codes)
+            - [Batch Status](#batch-status)
+            - [Sms Status](#sms-status)
+            - [Payment Provider Status](#payment-provider-status)
+            - [Payment Provider Payment Status](#payment-provider-payment-status)
+            - [Payment Provider](#payment-provider)
+            - [Recipient Status](#recipient-status)
+            - [Step](#step)
 
 <!-- /TOC -->
 
@@ -195,10 +195,10 @@ Done by the API client application when the API returns `401 Unauthorized`.
 
 ##### Direct Payment Settings
 
-| Property      | Type   | Description                                                                                                           | Mandatory |
-|---------------|--------|-----------------------------------------------------------------------------------------------------------------------|:---------:|
-| businessModel | string | Business model                                                                                                        | Y         |
-| serviceCode   | string | Service code, valid values are listed [here](https://github.com/Intelecom/sms/blob/master/references/servicecodes.md) | Y         |
+| Property      | Type   | Description                                                                                                                | Mandatory |
+|---------------|--------|----------------------------------------------------------------------------------------------------------------------------|:---------:|
+| businessModel | string | Business model, valid values are listed [here](https://github.com/Intelecom/direct-payment/blob/master/business-models.md) | Y         |
+| serviceCode   | string | Service code, valid values are listed [here](https://github.com/Intelecom/sms/blob/master/references/servicecodes.md)      | Y         |
 
 ##### Receipt Template
 
