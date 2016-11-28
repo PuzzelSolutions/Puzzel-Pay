@@ -20,6 +20,8 @@
             - [Direct Payment Settings](#direct-payment-settings)
             - [Receipt Template](#receipt-template)
                 - [Predefined variables](#predefined-variables)
+            - [Service Overrides](#service-overrides)
+            - [Service Template](#service-template)
             - [Request Type](#request-type)
             - [Response example, ok](#response-example-ok)
             - [Response example, validation errors](#response-example-validation-errors)
@@ -147,20 +149,32 @@ Done by the API client application when the API returns `401 Unauthorized`.
           "type": 0,
           "text": "Dear {{name}}, the invoice payment has been registered."
         }
-      ]
+      ],
+      "serviceOverrides": {
+        "serviceTemplates": [
+          {
+            "type": 0,
+            "text1": "string",
+            "text2": "string",
+            "text3": "string",
+            "text4": "string"
+          }
+        ]
+      }
     }
 
 ##### Batch Request
 
-| Property              | Type                                              | Description                                                        | Mandatory |
-|-----------------------|---------------------------------------------------|--------------------------------------------------------------------|:---------:|
-| batchReference        | string                                            | Unique identifier for the batch                                    | Y         |
-| recipients            | array of [Recipient](#recipient)                  | SMS message recipient(s)                                           | Y         |
-| messageTemplates      | array of [Message Template](#message-template)    | SMS template(s)                                                    | Y         |
-| action                | one of [Batch Action](#batch-action)              | Batch action                                                       | Y         |
-| expires               | datetime                                          | Date/time when the batch expires                                   | N         |
+| Property              | Type                                                | Description                                                        | Mandatory |
+|-----------------------|-----------------------------------------------------|--------------------------------------------------------------------|:---------:|
+| batchReference        | string                                              | Unique identifier for the batch                                    | Y         |
+| recipients            | array of [Recipient](#recipient)                    | SMS message recipient(s)                                           | Y         |
+| messageTemplates      | array of [Message Template](#message-template)      | SMS template(s)                                                    | Y         |
+| action                | one of [Batch Action](#batch-action)                | Batch action                                                       | Y         |
+| expires               | datetime                                            | Date/time when the batch expires                                   | N         |
 | directPaymentSettings | [Direct Payment Settings](#direct-payment-settings) | Direct Payment settings, only mandatory if enabled for the service | N         |
-| receiptTemplates      | array of [Receipt Template](#receipt-template)    | Receipt template(s)                                                | N         |
+| receiptTemplates      | array of [Receipt Template](#receipt-template)      | Receipt template(s)                                                | N         |
+| serviceOverrides      | [Service Overrides](#service-overrides)             | Service overrides, will override default settings                  | N         |
 
 ##### Recipient
 
@@ -215,6 +229,26 @@ The following predefined variables may be used in receipt templates.
 |------------------|------------------------------------------------------|
 | paymentLink      | Payment/receipt link, e.g. https://short.url/example |
 | paymentReference | Payment reference, e.g. abc123                       |
+
+##### Service Overrides
+
+| Property         | Type                                           | Description                                    | Mandatory |
+|------------------|------------------------------------------------|------------------------------------------------|:---------:|
+| serviceTemplates | array of [Service Template](#service-template) | Service template                               | Y         |
+
+##### Service Template
+
+If set, these will override the default values for the service. Fallback values will be used for those which are not specified.
+
+| Property | Type                                 | Description                                    | Mandatory |
+|----------|--------------------------------------|------------------------------------------------|:---------:|
+| type     | one of [Request Type](#request-type) | Request type                                   | Y         |
+| text1    | string                               | Template text, including variable placeholders | N         |
+| text2    | string                               | Template text, including variable placeholders | N         |
+| text3    | string                               | Template text, including variable placeholders | N         |
+| text4    | string                               | Template text, including variable placeholders | N         |
+
+![alt text](images/instapay-service-template-texts.png "Template texts")
 
 ##### Request Type
 
