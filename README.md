@@ -9,3 +9,4 @@ Welcome to the Intelecom InstaPay API developer pages. Here you will find everyt
 ### Where to start?
 
 -   [Rest API](rest.md) - Integrate your system with our REST API.
+-   [FTP API](ftp.md) - Integrate your system with our FTP API.
