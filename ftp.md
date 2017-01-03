@@ -38,7 +38,7 @@ It is recommended to encode the text file with UTF-8 encoding.
 </tr>
 <tr>
 <td>2</td>
-<td>batchReference</td>
+<td>Batch reference</td>
 <td>Unique identifier for the batch, note that this reference is appended with "-part{i}" if number of recipients are greater than 250.</td>
 <td>test-20170101-120000</td>
 </tr>
@@ -79,18 +79,24 @@ It is recommended to encode the text file with UTF-8 encoding.
 <tbody>
 <tr>
 <td>1</td>
-<td>msisdn</td>
-<td>msisdn of the recipient</td>
+<td>Msisdn</td>
+<td>Mobile phone number of the recipient</td>
 <td>+4799999999</td>
 </tr>
 <tr>
 <td>2</td>
+<td>Customer reference</td>
+<td>A unique identifier (within the batch) for the customer (e.g. use KID)</td>
+<td>abcd123456</td>
+</tr>
+<tr>
+<td>3</td>
 <td>Amount</td>
 <td>Amount to pay, in lowest monetary unit</td>
 <td>1000</td>
 </tr>
 <tr>
-<td>3</td>
+<td>4</td>
 <td>Currency</td>
 <td>Currency code (ISO 4217)</td>
 <td>NOK</td>
@@ -120,7 +126,7 @@ Some variables are predefined and can be used without adding them at the end of 
 ### Example of a file
 ```
 1;test-20170101-120000;30;Hello {{name}}, click here to pay {{amount}} kroner.;Your payment of {{amount}} is now confirmed
-+4799999999;10000;NOK;name;Kjetil;amount;100
-+4799999998;25000;NOK;name;Steven;amount;250
-+4799999997;7500;NOK;name;Robbie;amount;75
++4799999999;abcd1234;10000;NOK;name;Kjetil;amount;100
++4799999998;abcd1235;25000;NOK;name;Steven;amount;250
++4799999997;abcd1236;7500;NOK;name;Robbie;amount;75
 ```
