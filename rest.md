@@ -225,12 +225,12 @@ Done by the API client application when the API returns `401 Unauthorized`.
 
 ###### Predefined variables
 
-The following predefined variables may be used in receipt templates.
+The following predefined variables may be used in templates.
 
-| Variable name    | Description                                          |
-|------------------|------------------------------------------------------|
-| paymentLink      | Payment/receipt link, e.g. https://short.url/example |
-| paymentReference | Payment reference, e.g. abc123                       |
+| Variable name    | Description                                          | Usage                                                                       |
+|------------------|------------------------------------------------------|-----------------------------------------------------------------------------|
+| paymentLink      | Payment/receipt link, e.g. https://short.url/example | [Message Template](#message-template) / [Receipt Template](#receipt-template) |
+| paymentReference | Payment reference, e.g. abc123                       | [Receipt Template](#receipt-template)                                       |
 
 ##### Service Overrides
 
