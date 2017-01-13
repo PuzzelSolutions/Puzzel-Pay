@@ -200,6 +200,8 @@ Done by the API client application when the API returns `401 Unauthorized`.
 | type     | one of [Request Type](#request-type) | Request type                                   | Y         |
 | text     | string                               | Template text, including variable placeholders | Y         |
 
+> **TIP**: The [predefined variable](#predefined-variables) `paymentLink` may be used in the text. If the variable is omitted the link will be inserted at the end.
+
 ##### Batch Action
 
 | Value | Description            |
