@@ -45,7 +45,7 @@ It is recommended to encode the text file with UTF-8 encoding.
 <tr>
 <td>3</td>
 <td>Expiry days</td>
-<td>Number of days until the payment becomes invalid</td>
+<td>Number of days until the payment becomes invalid. The payment is valid until 23:59:59 on the expiration day.</td>
 <td>30</td>
 </tr>
 <tr>
