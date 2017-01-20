@@ -118,7 +118,7 @@ It is recommended to encode the text file with UTF-8 encoding.
 
 <sup>1</sup>Note that variables can be used in these texts. Variables are notated like this: {{variable_name}} - example of text with a variable: "Hello {{name}}, please click on the link to pay your bill of {{amount}} NOK". 
 - Some variables are predefined and can be used without adding them at the end of the line in the file, they are listed [here](rest.md#predefined-variables)
-- There is a limitation that you can not include variables that is not defined in the SMS message text (configuration data field 4).  
+- The input variables must exist in either the SMS texts or in the texts shown on the web.  
 
 
 <sup>2</sup>These fields can be repeated n times, but be sure to have the same number of variable names as you have variable values.
