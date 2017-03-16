@@ -4,11 +4,6 @@ InstaPay
 ### What is InstaPay?
 InstaPay lets businesses create a mobile bill and send them to customers through SMS or other communication channels. Customers can open the mobile bill and choose method of payment from a range of payment methods available and instantly pay on the go. The solution is hosted in a secure PCI-DSS certified environment.
 
-### What is InstaPay?
-InstaPay lets businesses create a mobile bill and send them to customers. 
-Customers can open the mobile bill and choose method of payment from a range of payment methods available and instantly pay on the go. 
-
-
 ### Philosophy:
 InstaPay is intended to let businesses push a payment bill to customers. The enduser should easily
 be able to choose prefered way of paying and throug as few steps possible pay on the go. InstaPay makes this easy
