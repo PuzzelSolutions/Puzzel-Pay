@@ -1,23 +1,28 @@
 InstaPay
 ============
 
-
-###What is InstaPay?
+### What is InstaPay?
 InstaPay lets businesses create a mobile bill and send them to customers through SMS or other communication channels. Customers can open the mobile bill and choose method of payment from a range of payment methods available and instantly pay on the go. The solution is hosted in a secure PCI-DSS certified environment.
 
-###Philosophy:
+### What is InstaPay?
+InstaPay lets businesses create a mobile bill and send them to customers. 
+Customers can open the mobile bill and choose method of payment from a range of payment methods available and instantly pay on the go. 
+
+
+### Philosophy:
 InstaPay is intended to let businesses push a payment bill to customers. The enduser should easily
 be able to choose prefered way of paying and throug as few steps possible pay on the go. InstaPay makes this easy
 and handles integrations with payment providers and simplifies the settlement by easy reporting. 
 
-###What is this used for?
-InstaPay can be used to send invoices, reminders and ad-hoc payments to customers. This lets customers pay on the go. InstaPay can also be used for charity to raise funds, tickets, permits, store cardprofiles for recurring payments, membership and much more. Amongst our clients you find insurance-, utility companies, banks , charity organizations and ERP companies.
 
+### What is this used for?
+InstaPay can be used to send invoices, reminders and ad-hoc payments to customers. This lets customers pay on the go. InstaPay can also be used for charity to raise funds, tickets, permits, store cardprofiles for recurring payments, membership and much more. Amongst our clients you find insurance-, utility companies, banks , charity organizations and ERP companies.
 
 *Supported payment channels:*  Debit- Creditcards (Visa , Mastercard), Vipps, Strex 
 
-
-
+### What is this used for?
+Instapay is used to send reminders to customers that havent paid their invoice. This lets forgetful customers pay on the go. InstaPay can also be used for charity to raise funds, tickets, permits, membership and much more. 
+*Supported payment channels:*  Creditcard, Vipps, Strex 
 
 Official documentation
 ----------------------
