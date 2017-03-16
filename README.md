@@ -15,10 +15,6 @@ InstaPay can be used to send invoices, reminders and ad-hoc payments to customer
 
 *Supported payment channels:*  Debit- Creditcards (Visa , Mastercard), Vipps, Strex 
 
-### What is this used for?
-Instapay is used to send reminders to customers that havent paid their invoice. This lets forgetful customers pay on the go. InstaPay can also be used for charity to raise funds, tickets, permits, membership and much more. 
-*Supported payment channels:*  Creditcard, Vipps, Strex 
-
 Official documentation
 ----------------------
 
