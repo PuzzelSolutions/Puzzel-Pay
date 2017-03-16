@@ -2,16 +2,16 @@ InstaPay
 ============
 
 
-###What is InstaPay?
+### What is InstaPay?
 InstaPay lets businesses create a mobile bill and send them to customers. 
 Customers can open the mobile bill and choose method of payment from a range of payment methods available and instantly pay on the go. 
 
-###Philosophy:
+### Philosophy:
 InstaPay is intended to let businesses push a payment bill to customers. The enduser should easily
 be able to choose prefered way of paying and throug as few steps possible pay on the go. InstaPay makes this easy
 and handles integrations with payment providers and simplifies the settlement by easy reporting. 
 
-###What is this used for?
+### What is this used for?
 Instapay is used to send reminders to customers that havent paid their invoice. This lets forgetful customers pay on the go. InstaPay can also be used for charity to raise funds, tickets, permits, membership and much more. 
 *Supported payment channels:*  Creditcard, Vipps, Strex 
 
