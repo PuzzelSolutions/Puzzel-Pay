@@ -436,6 +436,7 @@ If set, these will override the default values for the service. Fallback values 
 | 1     | Adyen       |
 | 2     | Strex       |
 | 3     | Dibs        |
+| 4     | Vipps       |
 
 ##### Recipient Status
 
