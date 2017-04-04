@@ -4,10 +4,6 @@
 
 - [Swagger UI](#swagger-ui)
 - [Authentication](#authentication)
-    - [Refresh token](#refresh-token)
-        - [Obtaining a new JWT](#obtaining-a-new-jwt)
-            - [Request example](#request-example)
-            - [Response example](#response-example)
 - [Resources](#resources)
     - [Batches](#batches)
         - [Create batch](#create-batch)
@@ -50,44 +46,16 @@ Swagger UI is available [here](https://instapay.intele.com/api/swagger/ui/index.
 
 ## Authentication
 
-The API uses [JSON Web Tokens (JWT)](https://auth0.com/docs/jwt) for authentication.
+The API uses [JSON Web Tokens (JWT)](https://en.wikipedia.org/wiki/JSON_Web_Token) as the authentication mechanism.
 
-### Refresh token
+The JWT must be set as part of the requests, in the `Authorization` header.
 
-Once we've set up an account you'll receive a refresh token.
+Example:  
+```
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWV9.TJVA95OrM7E2cBab30RMHrHDcEfxjoYZgeFONFh7HgQ
+```
 
-> **IMPORTANT**: Refresh tokens must be stored securely by the API client application because they essentially allow a user to remain authenticated forever. 
-
-> **IMPORTANT**: Obtaining new tokens using the `refresh_token` should happen only if the `id_token` has expired. For example, it is a bad practice to call the endpoint to get a new token every time you do an API call. There are rate limits in Auth0 that will throttle the amount of requests that can be done using the same token from a certain IP to this endpoint.
-
-#### Obtaining a new JWT
-
-Done by the API client application when the API returns `401 Unauthorized`.
-
-##### Request example
-
-    POST https://itcauth0prod.eu.auth0.com/delegation
-    Content-Type: application/json
-
-    {
-      "client_id":       "AzBkPvEzyDfzkEDcejIy50BVLXM8N4m4",
-      "grant_type":      "urn:ietf:params:oauth:grant-type:jwt-bearer",
-      "refresh_token":   "your_refresh_token",
-      "api_type":        "app",
-      "scope":           "openid app_metadata"
-    }
-
-##### Response example
-
-    Content-Type: application/json
-
-    {
-      "token_type": "Bearer",
-      "expires_in": 3600,
-      "id_token": "eyJ..."
-    }
-
-> **TIP**: Check out the [libraries & SDKs](https://auth0.com/docs#toc) provided by Auth0.
+> **IMPORTANT**: Don't call this API directly from a client-side application, the JWT will be visible to the users and may be abused. If you have a use case where this is relevant, please contact us for suggestions.
 
 ## Resources
 
