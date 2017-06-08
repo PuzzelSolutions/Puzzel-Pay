@@ -118,6 +118,7 @@ It is recommended to encode the text file with UTF-8 encoding.
 
 <sup>1</sup>Note that variables can be used in these texts. Variables are notated like this: {{variable_name}} - example of text with a variable: "Hello {{name}}, please click on the link to pay your bill of {{amount}} NOK". 
 - Some variables are predefined and can be used without adding them at the end of the line in the file, they are listed [here](rest.md#predefined-variables)
+- In addition the predefined variable {{CRLF}} can be used in the FTP API to get line breaks in the SMS message and receipt texts.
 - The input variables must exist in either the SMS texts or in the texts shown on the web.  
 
 
