@@ -33,6 +33,6 @@ InstaPay has a report module which generates a daily report for all successful t
 ### Contact us
 If you have any questions, please feel free to  [contact us](https://www.puzzel.com/no/om-puzzel/kontakt-oss/) 
 
-You can also contact us by phone 03050 in Norway.
+You can also contact us by phone 21898989 in Norway.
 
-[www.puzzel.com](https://www.puzzel.com)
+[www.puzzel.com](https://www.puzzel.com/no)
