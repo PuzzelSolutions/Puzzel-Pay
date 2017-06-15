@@ -31,7 +31,7 @@ InstaPay has a report module which generates a daily report for all successful t
 -   [OCR format](report_ocr.md)
 
 ### Contact us
-If you have any questions, please feel free to  [contact us](https://www.intelecom.no/vare-losninger/mobile-tjenester/sms/sms-api/kontakt/) 
+If you have any questions, please feel free to  [contact us](https://www.puzzel.com/no/om-puzzel/kontakt-oss/) 
 
 You can also contact us by phone 03050 in Norway.
 
