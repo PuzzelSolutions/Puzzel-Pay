@@ -35,4 +35,4 @@ If you have any questions, please feel free to  [contact us](https://www.intelec
 
 You can also contact us by phone 03050 in Norway.
 
-[www.intele.com](https://www.intele.com)
+[www.puzzel.com](https://www.puzzel.com)
