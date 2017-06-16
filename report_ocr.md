@@ -438,13 +438,13 @@ This record is only present if transaction type is either 20 (Refund with free t
 <td>9</td>
 <td>Earliest date</td>
 <td>171217</td>
-<td>Date in DDMMYY format. The earliest processing date for transactions in the assignment. Use transaction timestamp.</td>
+<td>Date in DDMMYY format. The earliest processing date for transactions in the assignment.</td>
 </tr>
 <tr>
 <td>10</td>
 <td>Latest date</td>
 <td>191217</td>
-<td>Date in DDMMYY format. The latest processing date for transactions in the assignment. We use transaction timestamp + 1 week.</td>
+<td>Date in DDMMYY format. The latest processing date for transactions in the assignment.</td>
 </tr>
 <tr>
 <td>11</td>
@@ -531,6 +531,6 @@ NY000010000080801406171001234560000000000000000000000000000000000000000000000000
 NY090020001234567000000101234567890000000000000000000000000000000000000000000000
 NY09103000000011306170000000000000000000000331200                 12345678000000
 NY091031000000100000000000000000000000000130617000000000000000000000000000000000
-NY090088000000010000000400000000000331200140617130617200617000000000000000000000
+NY090088000000010000000400000000000331200140617130617130617000000000000000000000
 NY000089000000010000000600000000000331200140617000000000000000000000000000000000
 ```
