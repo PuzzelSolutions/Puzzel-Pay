@@ -12,6 +12,7 @@
             - [Recipient](#recipient)
             - [Payment](#payment)
             - [Message Template](#message-template)
+            - [Recipient settings](#recipient-settings)
             - [Batch Action](#batch-action)
             - [Direct Payment Settings](#direct-payment-settings)
             - [Receipt Template](#receipt-template)
@@ -85,7 +86,11 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3O
           "payment": {
               "amount": 100,
               "currency": "NOK"
-          }
+          },
+		  "settings": {
+              "differentiator": "March billing",
+              "invoiceNode": "2017-03"				
+		  }
         },
         {
           "reference":"a_unique_reference",
@@ -146,13 +151,14 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3O
 
 ##### Recipient
 
-| Property  | Type                                 | Description                                     | Mandatory |
-|-----------|--------------------------------------|-------------------------------------------------|:---------:|
-| reference | string                               | Unique identifier for the recipient             | Y         |
-| msisdn    | string                               | MSISDN of the recipient                         | Y         |
-| type      | one of [Request Type](#request-type) | Request type                                    | Y         |
-| payment   | [Payment](#payment)                  | Payment details                                 | Y         |
-| variables | array of [Variable](#variable)       | Variable(s) that should be used in the template | N         |
+| Property  | Type                                 				| Description                                     | Mandatory |
+|-----------|---------------------------------------------------|-------------------------------------------------|:---------:|
+| reference | string                               				| Unique identifier for the recipient             | Y         |
+| msisdn    | string                               				| MSISDN of the recipient                         | Y         |
+| type      | one of [Request Type](#request-type) 				| Request type                                    | Y         |
+| payment   | [Payment](#payment)                  				| Payment details                                 | Y         |
+| variables | array of [Variable](#variable)       				| Variable(s) that should be used in the template | N         |
+| settings  | one of [Recipient settings](#recipient-settings)  | Recipient settings 							  | N         |
 
 ##### Payment
 
@@ -169,6 +175,15 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3O
 | text     | string                               | Template text, including variable placeholders | Y         |
 
 > **TIP**: The [predefined variable](#predefined-variables) `paymentLink` may be used in the text. If the variable is omitted the link will be inserted at the end.
+
+
+##### Recipient settings
+
+| Property 			| Type   	| Description                            																	| Mandatory |
+|-------------------|-----------|-----------------------------------------------------------------------------------------------------------|:---------:|
+| differentiator   	| string    | Arbitrary string defined by the client to enable grouping messages in certain statistic reports. 			| Y         |
+| invoiceNode 		| string 	| Arbitrary string defined by the client to enable grouping messages on the service invoice to the client.  | Y         |
+
 
 ##### Batch Action
 
