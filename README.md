@@ -23,6 +23,7 @@ Welcome to the InstaPay API developer pages. Here you will find everything you n
 
 -   [Rest API](rest.md) - The starting point on how to integrate your system with our REST API.
 -   [FTP API](ftp.md) - Integrate your system with our FTP API.
+-   [Callback API](callback.md) - Get callbacks with transaction statuses into your system. 
 
 ### Reporting
 InstaPay has a report module which generates a daily report for all successful transactions from the day before. The report is sent by email to your preferred address(es). We currently offer two report formats:
