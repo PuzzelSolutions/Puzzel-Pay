@@ -1,4 +1,4 @@
-# InstaPay API
+# Puzzel Pay API
 
 <!-- TOC depthFrom:2 depthTo:6 insertAnchor:false orderedList:false updateOnSave:true withLinks:true -->
 
