@@ -416,10 +416,10 @@ If set, these will override the default values for the service. Fallback values 
 
 | Value | Description |
 |-------|-------------|
-| 1     | Adyen       |
-| 2     | Strex       |
-| 3     | Dibs        |
-| 4     | Vipps       |
+| 1     | [Adyen] (https://www.adyen.com/)    |
+| 2     | [Strex] (http://www.strex.no)      |
+| 3     | [Dibs]  (http://www.dibs.no)      |
+| 4     | [Vipps] (https://www.vipps.no)       |
 
 ##### Recipient Status
 
