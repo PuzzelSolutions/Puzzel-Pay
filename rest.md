@@ -233,7 +233,7 @@ If set, these will override the default values for the service. Fallback values 
 | text3    | string                               | Template text, including variable placeholders | N         |
 | text4    | string                               | Template text, including variable placeholders | N         |
 
-![alt text](images/instapay-service-template-texts.png "Template texts")
+![alt text](images/puzzelpay-service-template-texts.png "Template texts")
 
 ##### Request Type
 
