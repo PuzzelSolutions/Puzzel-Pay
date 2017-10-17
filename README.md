@@ -1,6 +1,6 @@
 Puzzel Pay API
 ============
-![alt text](images/Puzzel Pay.jpg "Instapay title")
+![alt text](images/Puzzel Pay.jpg "Puzzel Pay")
 ### What is Puzzel Pay?
 Puzzel Pay lets businesses create a mobile bill and send them to customers through SMS or some other communication channels. Customers can open the mobile bill and choose a method of payment from a range of payment methods available and instantly pay on the go. The solution is hosted in a secure PCI-DSS certified environment.
 
