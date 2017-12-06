@@ -40,7 +40,7 @@ Please note that the number of fields in the file depends on how many variables 
 <tr>
 <td>6</td>
 <td>paymentProvider</td>
-<td>Which payment provider the end user selected (Current values are PCGW, Mobile Banking, Strex)</td>
+<td>Which payment provider the end user selected (Current values are Direct Pay, PCGW, Mobile Banking, SMS, Apple Pay, PayPal)</td>
 </tr>
 <tr>
 <td>7</td>
