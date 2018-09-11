@@ -441,3 +441,25 @@ If set, these will override the default values for the service. Fallback values 
 | 4     | Picked payment provider |
 | 5     | Payment failed          |
 | 6     | Paid                    |
+
+
+#### Refund recipient
+
+It is only possible to refund one specific recipient at a time. You must supply both the batchReference and the recipient's reference in order to make a refund. Please note that the whole amount is refunded.
+
+##### Request example
+
+DELETE https://instapay.intele.com/api/batches/{batchReference}/{recipient.Reference}
+    Accept: application/vnd.instapay.refundrequest.v1+json
+    Authorization: Bearer eyJ...
+
+##### Response codes
+
+| Code | Description           |
+|------|-----------------------|
+| 200  | Ok                    |
+| 400  | Validation error(s)   |
+| 401  | Unauthorized          |
+| 404  | Batch and/or recipient not found |
+| 424  | Unable to refund - 3rd party rejected the refund |
+| 500  | Internal server error |
