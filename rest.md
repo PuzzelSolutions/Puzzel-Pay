@@ -38,7 +38,7 @@
             - [Payment Provider](#payment-provider)
             - [Recipient Status](#recipient-status)
             - [Step](#step)
-        - [Refund recipient](#get-batch-status)
+        - [Refund recipient](#refund-recipient)
             - [Request example](#request-example)
             - [Response codes](#response-codes)
 
